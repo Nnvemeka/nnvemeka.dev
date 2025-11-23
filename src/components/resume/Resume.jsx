@@ -1,12 +1,36 @@
-import React from "react";
 import ResumeCard from "../../shared/resumeCard/ResumeCard";
 import { Link } from "react-router-dom";
 import Button from "../../shared/button/Button";
 import "./Resume.css";
-import pdf from "../../static/EdUgwu.pdf";
+import pdf from "../../static/Edward's resume.pdf";
 
 const Resume = () => {
   const experiences = [
+    {
+      company: "maliroso Digital",
+      position: "Frontend Engineer(Full Time)",
+      started: "Sept 2024",
+      ended: null,
+      description: null,
+      achievements: [
+        "Develop and maintain responsive, user-friendly web interfaces using React and cross-platform mobile applications using React Native, ensuring consistency, performance, and a seamless user experience across all platforms.",
+        "Collaborate with UI/UX designers to translate design mockups into functional components for both web and mobile, adhering to platform-specific best practices.",
+        "Architect and implement state management solutions and integrate RESTful/GraphQL APIs to handle data efficiently on web and mobile clients.",
+        "Implement performance best practices (e.g., lazy loading, code splitting, memoization) to enhance application speed and scalability on all devices",
+      ],
+    },
+    {
+      company: "Vosyn AI",
+      position: "Frontend Developer(Part Time)",
+      started: "Aug 2024",
+      ended: "Feb 2024",
+      description: null,
+      achievements: [
+        "Developed high-quality, reusable frontend components for an AI-powered platform using React and Next.js.",
+        "Engineered advanced 3D visualizations and interactive features using Three.js, enhancing data representation and user engagement.",
+        "Contributed to a comprehensive test suite to ensure component reliability and application stability",
+      ],
+    },
     {
       company: "Freexit Technologies",
       position: "Frontend Engineer(Part Time)",
@@ -14,25 +38,23 @@ const Resume = () => {
       ended: null,
       description: null,
       achievements: [
-        "Spearheaded the frontend development team in architecting and implementing a cutting-edge logistics software platform.",
-        "Leveraged Next.js to create a highly responsive and user-friendly interface for our logistics service, ensuring an exceptional user experience.",
-        "Implemented robust security measures to safeguard customer data and financial transactions, ensuring the safety and trust of our users.",
-        "Led efforts to enhance the platform's scalability, performance, and reliability to meet the demands of a growing user base.",
-        "Fostered a culture of innovation, encouraging team members to explore and implement new technologies and features that enhance the service.",
+        "Spearheaded the frontend architecture for a cutting-edge logistics software platform using Next.js, focusing on scalability and security.",
+        "Extended platform accessibility by developing and maintaining a companion cross-platform mobile application using React Native, ensuring feature parity and a consistent user experience.",
+        "Implemented robust security measures to protect customer data and financial transactions, building user trust.",
+        "Enhanced platform performance and reliability to support a rapidly growing user base.",
       ],
     },
     {
       company: "Prexcribe",
       position: "Lead Frontend Engineer(Part Time)",
       started: "Jul 2022",
-      ended: null,
+      ended: "Jul 2024",
       description: null,
       achievements: [
-        "Made recommendations for new technology integration based on suitability and alignment to business goals.",
-        "Designed and optimized responsive user interfaces, enabling seamless access to critical patient data and clinical decision support on various devices.",
-        "Collaborated with backend developers to establish efficient data communication and integration, enabling real-time access to patient records and clinical insights.",
-        "Teamed on user-centric design strategy in translation of UX and business requirements into coded solutions.",
-        "Implemented stringent security measures to ensure compliance with healthcare data regulations, safeguarding patient information and privacy.",
+        "Led frontend development for a healthcare SaaS platform, increasing operational efficiency by 35% through strategic technology integration and process improvements.",
+        "Architected and optimized responsive UIs for critical patient data access, enabling seamless usability across devices.",
+        "Implemented stringent security protocols and compliant data handling practices to meet healthcare regulations (HIPAA/GDPR-like standards).",
+        "Collaborated on a user-centric design strategy that improved overall user satisfaction by 20%.",
       ],
     },
     {
@@ -49,46 +71,46 @@ const Resume = () => {
         "Integrated software components into fully functional software system.",
       ],
     },
-    {
-      company: "Kellispay",
-      position: "Frontend Developer (Contract)",
-      started: "Jan 2022",
-      ended: "Jun 2022",
-      description: null,
-      achievements: [
-        "Planned and developed interfaces that simplified overall management and ease usage.",
-        "Optimized website and increased speed by 15%.",
-        "Built and deployed scalable mobile responsive User Interfaces for maximized User experience.",
-        "Contributed ideas and suggestions in team meetings and delivered updates on deadlines, designs and enhancements",
-      ],
-    },
-    {
-      company: "Davayte",
-      position: "Frontend Engineer (Contract)",
-      started: "Jan 2019",
-      ended: "Dec 2019",
-      description: null,
-      achievements: [
-        "Worked cooperatively with client services, sales and design team in deadline-driven environment.",
-        "Designed and updated layouts to meet usability and performance requirements, increasing app speed by 10%.",
-        "Coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms.",
-        "Improved tools to boost user interaction and deliver design versatility.",
-      ],
-    },
-    {
-      company: "Nigerian Breweries PLC",
-      position: "Software Developer (IT)",
-      started: "Apr 2018",
-      ended: "Sept 2018",
-      description: null,
-      achievements: [
-        "Built and deployed scalable mobile responsive User Interfaces for maximized User experience.",
-        "Assisted with search engine optimization (SEO) strategies and techniques.",
-        "Worked with version control systems such as Git and SVN.",
-        "Wrote well designed, testable and efficient code.",
-        "Participated in code reviews to ensure best practices.",
-      ],
-    },
+    // {
+    //   company: "Kellispay",
+    //   position: "Frontend Developer (Contract)",
+    //   started: "Jan 2022",
+    //   ended: "Jun 2022",
+    //   description: null,
+    //   achievements: [
+    //     "Planned and developed interfaces that simplified overall management and ease usage.",
+    //     "Optimized website and increased speed by 15%.",
+    //     "Built and deployed scalable mobile responsive User Interfaces for maximized User experience.",
+    //     "Contributed ideas and suggestions in team meetings and delivered updates on deadlines, designs and enhancements",
+    //   ],
+    // },
+    // {
+    //   company: "Davayte",
+    //   position: "Frontend Engineer (Contract)",
+    //   started: "Jan 2019",
+    //   ended: "Dec 2019",
+    //   description: null,
+    //   achievements: [
+    //     "Worked cooperatively with client services, sales and design team in deadline-driven environment.",
+    //     "Designed and updated layouts to meet usability and performance requirements, increasing app speed by 10%.",
+    //     "Coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms.",
+    //     "Improved tools to boost user interaction and deliver design versatility.",
+    //   ],
+    // },
+    // {
+    //   company: "Nigerian Breweries PLC",
+    //   position: "Software Developer (IT)",
+    //   started: "Apr 2018",
+    //   ended: "Sept 2018",
+    //   description: null,
+    //   achievements: [
+    //     "Built and deployed scalable mobile responsive User Interfaces for maximized User experience.",
+    //     "Assisted with search engine optimization (SEO) strategies and techniques.",
+    //     "Worked with version control systems such as Git and SVN.",
+    //     "Wrote well designed, testable and efficient code.",
+    //     "Participated in code reviews to ensure best practices.",
+    //   ],
+    // },
   ];
 
   return (
@@ -112,15 +134,13 @@ const Resume = () => {
         <p>Frontend Engineer</p>
         <div className="summary">
           <p>
-            An experienced front-end engineer with demonstrated expertise in
-            React, Next, Angular, JavaScript and Typescript, I specialize in
-            developing responsive websites and web applications that provide a
-            beautiful, intuitive user experience and drive maximum engagement
-            and conversions. I have a keen eye for detail and have successfully
-            applied my skills to the financial, e-commerce, and health care
-            industries. With a passion for creating top-notch user experiences,
-            I take immense pride in my work, continually pursuing excellence
-            while closely aligning with product objectives.
+            An A results-driven Frontend Engineer with 5+ years of experience
+            specializing in building high-performance, scalable web applications
+            using modern JavaScript frameworks. Proven ability to lead
+            development teams, translate complex business requirements into
+            technical solutions, and deliver exceptional user experiences that
+            drive engagement and operational efficiency. Passionate about clean
+            code, performance optimization, and mentoring.
           </p>
         </div>
         <div className="divider">
@@ -129,10 +149,10 @@ const Resume = () => {
         </div>
         <div className="skills">
           <p>
-            React, Next, Angular, JavaScript, Typescript, CSS, Sass/SCSS, Styled
-            components, Tailwind CSS, Bootstrap, Material UI, Chakra UI, Fetch
-            API, Axios, GraphQL, React query, Framer motion, GSAP(Greensock),
-            Git.
+            React, React Native, NextJS, JavaScript, Typescript, CSS, Sass/SCSS,
+            Styled components, Tailwind CSS, Bootstrap, Material UI, Chakra UI,
+            Fetch API, Axios, GraphQL, React query(Tanstack), Framer motion,
+            GSAP(Greensock), Git.
           </p>
         </div>
         <div className="divider">

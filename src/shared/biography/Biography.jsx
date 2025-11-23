@@ -65,11 +65,7 @@ const Biography = ({ active }) => {
         </ul>
       </nav>
       <div className="footer">
-        <img
-          // src="http://res.cloudinary.com/freexitnow/image/upload/v1721332862/p2lalshfpvozbsybn5ul.jpg"
-          src="https://i.ibb.co/SNNsRFd/nnaemeka.png"
-          alt="avatar"
-        />
+        <img src="https://i.ibb.co/SNNsRFd/nnaemeka.png" alt="avatar" />
         <div className="social">
           <a
             href="https://github.com/Nnvemeka"

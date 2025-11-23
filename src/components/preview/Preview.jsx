@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import { projects } from "../../utils/projectLists";
 import "./Preview.css";
@@ -9,9 +9,13 @@ const Preview = () => {
   const { id } = useParams();
   const project = projects.find((project) => project.id == id);
 
-  console.log(id, project);
   return (
     <div className="preview">
+      <Link to={"/project"}>
+        <small className="project_preview">
+          <i className="fas fa-arrow-left"></i>
+        </small>
+      </Link>
       <h3 className="title">{project?.title}</h3>
       {project?.images.map((image, index) => (
         <div key={index} className="preview_image_container">

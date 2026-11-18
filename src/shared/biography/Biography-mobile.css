@@ -18,6 +18,7 @@
   
   #mobile .base_container .hero .intro_box {
     flex-direction: column-reverse;
+    align-items: center;
     margin: 0;
   }
   

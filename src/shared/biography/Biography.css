@@ -17,6 +17,12 @@
   display: none;
 }
 
+.intro_box .avi img {
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .description {
   display: flex;
   padding-right: 20%;
@@ -138,13 +144,15 @@ nav ul li:hover a .menu_bullet {
 }
 
 .footer img {
-  width: fit-content;
+  width: 44px;
+  height: 44px;
   margin-right: 15px;
   position: relative;
   top: 2px;
-  height: 45px;
-  width: 40px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
 }
 
 .footer .social {
@@ -204,14 +212,16 @@ nav ul li:hover a .menu_bullet {
 
 @media (max-width: 993px) {
   .intro_box .avi {
-    display: initial;
+    display: block;
     width: fit-content;
   }
 
   .intro_box .avi img {
-    width: 100px;
-    height: 113px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
   }
 }
 

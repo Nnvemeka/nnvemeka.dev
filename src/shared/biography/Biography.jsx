@@ -10,7 +10,7 @@ const Biography = ({ active }) => {
         <div className="intro_box">
           <h1>Hello, I&apos;m Edward Ugwu.</h1>
           <div className="avi">
-            <img src="/me.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
+            <img src="/prime.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
           </div>
         </div>
         <div className="description">
@@ -80,7 +80,7 @@ const Biography = ({ active }) => {
         </ul>
       </nav>
       <div className="footer">
-        <img src="/me.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
+        <img src="/prime.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
         <div className="social">
           <a
             href="https://github.com/Nnvemeka"

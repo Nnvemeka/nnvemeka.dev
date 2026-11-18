@@ -10,6 +10,7 @@ const Form = () => {
         e.preventDefault();
 
         setLoading(true);
+        setStatus("");
 
         const form = e.target;
         const data = new FormData(form);
@@ -44,14 +45,14 @@ const Form = () => {
                 <div className="form_section">
                     <label>
                         <span>Name*</span>
-                        <input type="text" name="name" required autoFocus />
+                        <input type="text" name="name" required autoComplete="name" />
                     </label>
                 </div>
 
                 <div className="form_section">
                     <label>
                         <span>Email*</span>
-                        <input required type="email" name="email" />
+                        <input required type="email" name="email" autoComplete="email" />
                     </label>
                 </div>
 
@@ -68,14 +69,13 @@ const Form = () => {
                 </div>
 
                 <div className="form_section">
-                    <button type="submit">
-                        {" "}
-                        {!loading ? "Send" : <i className="fas fa-ellipsis-h">sent</i>}{" "}
+                    <button type="submit" disabled={loading}>
+                        {loading ? "Sending..." : "Send Message"}
                     </button>
                 </div>
             </form>
 
-            {status === "SUCCESS" ? <Success display={setStatus} /> : ""}
+            {status === "SUCCESS" ? <Success /> : ""}
 
             {status === "ERROR" && (
                 <p style={{ textAlign: "center", color: "red" }}>

@@ -7,32 +7,30 @@ const SocialMedia = () => {
         href="https://github.com/Nnvemeka"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="GitHub"
       >
-        <i className="fab fa-github"></i>
+        <i className="fab fa-github" aria-hidden="true"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/nnvemeka/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="LinkedIn"
       >
-        <i className="fab fa-linkedin"></i>
+        <i className="fab fa-linkedin" aria-hidden="true"></i>
       </a>
       <a
         href="https://twitter.com/nnvemeka"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Twitter"
       >
-        <i className="fab fa-twitter"></i>
+        <i className="fab fa-twitter" aria-hidden="true"></i>
       </a>
-      <a
-        href="mailto:nnvedward@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fas fa-at"></i>
+      <a href="mailto:nnvedward@gmail.com" aria-label="Email">
+        <i className="fas fa-at" aria-hidden="true"></i>
       </a>
     </div>
-    
   );
 };
 

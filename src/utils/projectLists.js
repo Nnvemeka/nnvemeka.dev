@@ -3,10 +3,15 @@ export const projects = [
     id: 1,
     title: "Jenny's Glow",
     description:
-      "An e-commerce website built to make browsing and purchasing skincare and beauty products simple, fast, and convenient for customers.",
+      "E-commerce website for a beauty brand, designed to strengthen online presence and drive engagement through a seamless shopping experience.",
+    role: "Frontend Engineer",
+    highlights: [
+      "Built responsive product discovery and shopping flows with React and Next.js.",
+      "Focused on a polished, user-friendly experience for browsing and conversion.",
+    ],
     github: "https://github.com/Nnvemeka",
-    live: "https://www.jennysglowng.com",
-    stack: "NextJS, TypeScript, Tanstack query, Chakra UI",
+    live: "https://jennysglowng.com",
+    stack: "React, Next.js, Chakra UI",
     isPrivate: true,
     images: [
       "/jennys-glow/j-home.png",
@@ -19,12 +24,33 @@ export const projects = [
   },
   {
     id: 2,
-    title: "School Motive",
+    title: "Vosyn AI Platform",
     description:
-      "A school management system to streamline administrative tasks, and improve communication between educators, students, and parents.",
+      "AI-powered platform that streamlines workflows and boosts productivity through intelligent automation and data-driven insights.",
+    role: "Frontend Developer",
+    highlights: [
+      "Contributed reusable frontend components and interactive features.",
+      "Supported a modern, responsive experience for AI-driven workflows.",
+    ],
     github: "https://github.com/Nnvemeka",
-    live: "https://dev.schoolmotive.com",
-    stack: "React, TypeScript, Tanstack query, Chakra UI",
+    live: "https://vosyn.ai",
+    stack: "React, Next.js, Tailwind CSS",
+    isPrivate: true,
+    images: [],
+  },
+  {
+    id: 3,
+    title: "SchoolMotive",
+    description:
+      "School management system that supports personalized learning, streamlines administrative tasks, and improves communication between educators, students, and parents.",
+    role: "Frontend Engineer",
+    highlights: [
+      "Developed data-driven interfaces for academic and administrative workflows.",
+      "Focused on usability and clarity across multiple user roles.",
+    ],
+    github: "https://github.com/Nnvemeka",
+    live: "https://schoolmotive.com",
+    stack: "React, TypeScript, TanStack Query, Chakra UI",
     isPrivate: true,
     images: [
       "/schoolmotive/sch1.png",
@@ -34,10 +60,31 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
+    title: "TranxNow",
+    description:
+      "Web frontend for a financial infrastructure platform focused on fast, secure global money movement with responsive, performance-optimized payment workflows.",
+    role: "Frontend Engineer",
+    highlights: [
+      "Built interfaces for payment workflows with security and reliability as priorities.",
+      "Delivered responsive, performance-oriented user experiences.",
+    ],
+    github: "https://github.com/Nnvemeka",
+    live: "https://tranxnow.com",
+    stack: "React, TypeScript",
+    isPrivate: true,
+    images: [],
+  },
+  {
+    id: 5,
     title: "Nogabi Solutions",
     description:
-      "An agency that offers robust, secure, and scalable solutions, from collaborative ideation and product strategy to engineering, testing, and continuous scaling.",
+      "Agency website showcasing services across product strategy, engineering, and delivery with a polished, modern brand presentation.",
+    role: "Frontend Developer",
+    highlights: [
+      "Translated brand and service messaging into responsive, animated web pages.",
+      "Delivered a clean marketing experience optimized for clarity and engagement.",
+    ],
     github: "https://github.com/Nnvemeka",
     live: "https://nogabi-solutions.com",
     stack: "React, TypeScript, Framer Motion",
@@ -45,24 +92,34 @@ export const projects = [
     images: ["/nogabi/nog1.png", "/nogabi/nog2.png", "/nogabi/nog3.png"],
   },
   {
-    id: 4,
+    id: 6,
     title: "MezGPT",
     description:
-      "AI tool revolutionizing open-source project data management. Optimizes data handling for collaborative software development.",
+      "AI-assisted interface for managing open-source project data and workflows, with a focus on streamlined collaboration.",
+    role: "Frontend Engineer",
+    highlights: [
+      "Built interactive UI flows for AI-enabled data handling and project operations.",
+      "Integrated modern frontend tooling to support a responsive product experience.",
+    ],
     github: "https://github.com/Nnvemeka",
     live: "https://mezgpt.vercel.app",
-    stack: "NextJS, TypeScript, Wagmi, RainbowKit",
+    stack: "Next.js, TypeScript, Wagmi, RainbowKit",
     isPrivate: true,
     images: ["/mezgpt/mez0.png", "/mezgpt/mez2.png", "/mezgpt/mez3.png"],
   },
   {
-    id: 5,
-    title: "Cithar",
+    id: 7,
+    title: "Cithar ERP",
     description:
-      "Cithar is an enterprise resource planning product that helps nonprofit organizations manage their finances, operations, and programs with ease and transparency.",
+      "Enterprise resource planning product helping nonprofit organizations manage finance, operations, and programs in one platform.",
+    role: "Frontend Engineer",
+    highlights: [
+      "Developed modular UI surfaces for complex operational and reporting workflows.",
+      "Prioritized consistency and usability for data-heavy enterprise screens.",
+    ],
     github: "https://github.com/Nnvemeka",
     live: "https://erp.cithar.com",
-    stack: "React, TypeScript, Tanstack query, Chakra UI",
+    stack: "React, TypeScript, TanStack Query, Chakra UI",
     isPrivate: true,
     images: [
       "/cithar/cith1.png",
@@ -72,43 +129,35 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     title: "Goose Coin Tap Bot",
     description:
-      "Goose Coin Tap Bot is a demo bot similar to the popular tap bots like: Hamstar, Tapswap, Notcoin, etc.",
+      "Demo Telegram tap-bot web experience inspired by popular tap-to-earn products.",
+    role: "Frontend Developer",
+    highlights: [
+      "Implemented the interactive tap interface and game-like UI states.",
+      "Optimized the experience for quick, repeat interactions on mobile.",
+    ],
     github: "https://github.com/Nnvemeka/goosecoin",
     live: "https://t.me/goose_coin_tap_bot/GooseCoin",
-    stack: "React, Typescript, Tailwind CSS",
+    stack: "React, TypeScript, Tailwind CSS",
     isPrivate: false,
     images: ["/goosecoin/goosecoin.png"],
   },
   {
-    id: 7,
-    title: "AI-Interviewer",
+    id: 9,
+    title: "AI Interviewer",
     description:
-      "AI-Interviewer is a web application that allows users to upload their resumes and receive an AI-driven verbal interview based on the resume content.",
+      "Web app that lets users upload a resume and receive AI-driven interview prompts based on their experience.",
+    role: "Frontend Developer",
+    highlights: [
+      "Built the upload and interview flow with a focus on clarity and feedback.",
+      "Integrated AI-powered interactions into a simple, user-friendly interface.",
+    ],
     github: "https://github.com/Nnvemeka/AI-interviewer",
     live: "https://ai-interv.vercel.app",
-    stack: "NextJS, Typescript, OpenAI",
+    stack: "Next.js, TypeScript, OpenAI API",
     isPrivate: false,
     images: ["/ai-interviewer/ai-inter.png"],
   },
-  // {
-  //   id: 7,
-  //   title: "Butiq",
-  //   description:
-  //     "Butiq offers a diverse range of clothing for every style and occasion. Butiq provides a seamless shopping experience for all fashion needs.",
-  //   github: "https://github.com/Nnvemeka/butiq",
-  //   live: "https://shop-butiq.vercel.app",
-  //   stack: "React, NodeJS, Express, MongoDB",
-  //   isPrivate: false,
-  //   images: [
-  //     "/butiq/but1.png",
-  //     "/butiq/but2.png",
-  //     "/butiq/but3.png",
-  //     "/butiq/but4.png",
-  //     "/butiq/but5.png",
-  //     "/butiq/but6.png",
-  //   ],
-  // },
 ];

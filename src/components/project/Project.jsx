@@ -8,15 +8,15 @@ const Project = () => {
   return (
     <div className="project">
       <div className="portfolio_showcase">
-        <h3 className="title">PROJECTS</h3>
+        <h3 className="title">Selected Projects</h3>
         {projects.map((project, index) => (
-          <ProjectCard {...project} key={index} index={index} />
+          <ProjectCard {...project} key={project.id} index={index} />
         ))}
       </div>
       <div>
         <Button
-          previous={{ url: "/", text: "Home" }}
-          next={{ url: "/article", text: "Article" }}
+          previous={{ url: "/contact", text: "Contact" }}
+          next={{ url: "/resume", text: "Resume" }}
         />
       </div>
     </div>

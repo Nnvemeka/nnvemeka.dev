@@ -3,11 +3,9 @@ import Project from "../components/project/Project";
 import Layout from "../layout/Layout";
 
 const DashBoardPage = () => (
-    <div>
-    <Layout home={true} active="work">
-            <Project />
-       </Layout>
-    </div>
-)
+  <Layout home active="project" title="Projects">
+    <Project />
+  </Layout>
+);
 
-export default DashBoardPage
+export default DashBoardPage;

@@ -8,38 +8,44 @@ const Biography = ({ active }) => {
     <div className="base_container">
       <div className="hero">
         <div className="intro_box">
-          <h1>Hello, I'm Edward Ugwu.</h1>
+          <h1>Hello, I&apos;m Edward Ugwu.</h1>
           <div className="avi">
-            <img src="https://i.ibb.co/SNNsRFd/nnaemeka.png" alt="avatar" />
+            <img src="/me.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
           </div>
         </div>
         <div className="description">
           <p>
             <span>
-              An experienced{" "}
-              <span className="highlight">Frontend Engineer</span> specializing
-              in developing{" "}
-              <span className="highlight">responsive websites</span> and{" "}
-              <span className="highlight">web applications</span> using modern{" "}
-              <span className="highlight">web technologies</span> to provide a{" "}
-              <span className="highlight">beautiful</span>,{" "}
-              <span className="highlight">intuitive user experience</span> and
-              drive maximum engagement and conversions.
+              <span className="highlight">Frontend Engineer</span> with 6+ years
+              of experience building{" "}
+              <span className="highlight">responsive web</span> and{" "}
+              <span className="highlight">mobile experiences</span> with React,
+              React Native, Next.js, and TypeScript. I deliver{" "}
+              <span className="highlight">
+                performant, maintainable interfaces
+              </span>{" "}
+              across healthcare, logistics, e-commerce, education, and AI
+              products.
             </span>
           </p>
         </div>
         <div className="go_button_container">
           <Link to="/project" className="explore">
-            <button className="explore">Explore</button>
+            <button type="button" className="explore">
+              View Projects
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button type="button">Contact</button>
           </Link>
         </div>
       </div>
-      <nav>
+      <nav aria-label="Primary">
         <ul>
           <li className={active === "project" ? "active_menu" : ""}>
             <small>
               <span>00</span>
-              <Link to="/">
+              <Link to="/project">
                 <span className="menu_bullet"></span> PROJECTS
               </Link>
             </small>
@@ -62,17 +68,26 @@ const Biography = ({ active }) => {
               </Link>
             </small>
           </li>
+
+          <li className={active === "contact" ? "active_menu" : ""}>
+            <small>
+              <span>03</span>
+              <Link to="/contact">
+                <span className="menu_bullet"></span> CONTACT
+              </Link>
+            </small>
+          </li>
         </ul>
       </nav>
       <div className="footer">
-        <img src="https://i.ibb.co/SNNsRFd/nnaemeka.png" alt="avatar" />
+        <img src="/me.jpeg" alt="Portrait of Edward Nnaemeka Ugwu" />
         <div className="social">
           <a
             href="https://github.com/Nnvemeka"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github"></i>Github
+            <i className="fab fa-github" aria-hidden="true"></i> GitHub
           </a>
 
           <a
@@ -80,23 +95,24 @@ const Biography = ({ active }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-twitter"></i>Twitter{" "}
-          </a>
-
-          <a href="https://www.linkedin.com/in/nnvemeka/">
-            <i className="fab fa-linkedin"></i>LinkedIn <span>{"  "}</span>
+            <i className="fab fa-twitter" aria-hidden="true"></i> Twitter
           </a>
 
           <a
-            href="mailto:nnvedward@gmail.com"
+            href="https://www.linkedin.com/in/nnvemeka/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fas fa-at"></i> Email{" "}
+            <i className="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+
+          <a href="mailto:nnvedward@gmail.com">
+            <i className="fas fa-at" aria-hidden="true"></i> Email
           </a>
         </div>
       </div>
     </div>
   );
 };
+
 export default Biography;

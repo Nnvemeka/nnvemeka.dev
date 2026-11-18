@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ArticleCard.css";
 
-const ArticleCard = ({ id, tags, url, first_publication_date, data }) => {
-  const { title, content } = data;
+const ArticleCard = ({ id, url, first_publication_date, data }) => {
+  const { title } = data;
 
   return (
     <article

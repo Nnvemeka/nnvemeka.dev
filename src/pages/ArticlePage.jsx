@@ -3,11 +3,9 @@ import Article from "../components/article/Article";
 import Layout from "../layout/Layout";
 
 const ArticlePage = () => (
-    <div>
-        <Layout active="article" title="Article">
-            <Article />
-        </Layout>
-    </div>
-)
+  <Layout active="article" title="Articles">
+    <Article />
+  </Layout>
+);
 
-export default ArticlePage
+export default ArticlePage;
